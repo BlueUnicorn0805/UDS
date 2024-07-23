@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:id="@+id/btnToolbarHome"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/uds_logo" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/padding1"
+        android:layout_marginVertical="@dimen/padding2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_3" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_scheduleaction"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/padding3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:layout_marginHorizontal="@dimen/padding3"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Identification"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:id="@+id/tvClientInfo"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding2"
+                    android:layout_height="wrap_content"
+                    android:text="Client:\nChuck Lacona"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginHorizontal="@dimen/padding3"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Info"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:id="@+id/tvPickupInfo"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding2"
+                    android:layout_height="wrap_content"
+                    android:text="Client:\nChuck Lacona"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_white"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="@dimen/padding3"
+                android:layout_marginHorizontal="@dimen/padding3"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Destination Info"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:id="@+id/tvDestinationInfo"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/padding2"
+                    android:layout_height="wrap_content"
+                    android:text="Client:\nChuck Lacona"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding1">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/padding1"
+            android:src="@drawable/uds_logo" />
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/user_name"
+            style="@style/TextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Business Information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_3" />
+
+    </LinearLayout>
+
+    <!--    <include layout="@layout/layout_underline" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp"
+                        android:text="Your Business @handle"
+                        android:textColor="@color/white" />
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:id="@+id/tvHandleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Founder"
+                        android:textColor="@color/white"
+                        android:textSize="32dp" />
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:justificationMode="inter_word"
+                        android:padding="3dp"
+                        android:text="Purpose:\nUse your @handle like a business card. People can book with you directly! They can tip and send money anytime-instantly!"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="\nThe Time Zone is so you can adjust the time you are in and display the correct time for messages and more."
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/padding1">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_nav_world"
+                    app:tint="@color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerTimeZone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding3"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:entries="@array/spinner_timezone"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/fName"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5"
+                android:visibility="gone" />
+
+            <include
+                layout="@layout/layout_underline"
+                android:visibility="gone" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:visibility="gone" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/lName"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/setup_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/selector_blackround"
+                android:text="Set your New QR Code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_4"
+                android:visibility="gone" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Company Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/cName"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Legal Name"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/eLegalName"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="EIN/SSN"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/eEIN"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="*********"
+                        android:textSize="@dimen/font_5" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Company Email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/eEmail"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5" />
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Phone Number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/ePhone"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5" />
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Street Address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/eStreetAddress"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress|textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5" />
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="STE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/eSTE"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress|textCapWords"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/font_5" />
+
+            <include layout="@layout/layout_underline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginBottom="5dp"
+                    android:text="Zip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.c.view.OpenSansEditText
+                    android:id="@+id/eZip"
+                    style="@style/EditTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/font_5" />
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_underline" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="5dp"
+                        android:text="City"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/eCity"
+                        style="@style/EditTextStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress|textCapWords"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/font_5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding1"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="5dp"
+                        android:text="STATE"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:id="@+id/eState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/bg_edittext"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress|textCapWords"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:padding="@dimen/padding1"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/font_5" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_underline" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                style="@style/TextWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Established"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvEstablished"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_edittext"
+                android:imeOptions="actionNext"
+                android:inputType="textPostalAddress|textCapWords"
+                android:maxLines="1"
+                android:padding="@dimen/padding1"
+                android:singleLine="true"
+                android:text="1994-05-26"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <include layout="@layout/layout_underline" />
+
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/padding5"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/selector_blackround"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_4" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

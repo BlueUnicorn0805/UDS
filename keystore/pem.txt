@@ -1,0 +1,3 @@
+C:\Program Files\Java\jre1.8.0_191\bin
+
+keytool -export -rfc -alias chuckapps!2020 -file upload_certificate.pem -keystore F:\Home\KGS\Android\Generation2\SharingLocation\Android\keystore\onlyForiFare.jks 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="hawaiiappbuilders.c.RegisterActivity">
+
+    <hawaiiappbuilders.c.view.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/selector_backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+        android:id="@+id/openSansBoldTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding5"
+        android:text="Welcome"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <hawaiiappbuilders.c.view.OpenSansTextView
+        android:id="@+id/tvFN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding1"
+        android:text="Xiao"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/font_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView" />
+
+    <ScrollView
+        android:id="@+id/openSansTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/padding3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnEnrollNow"
+        app:layout_constraintTop_toBottomOf="@+id/tvFN" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UDS delivers Parcel/Food, TAXI &amp; NEMT."
+                android:textColor="@android:color/white"
+                android:textColorHint="#ffffff"
+                android:textSize="@dimen/font_5"
+                android:gravity="center" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our System provides you the fares.\nWe connect to over 30 milion small businesses nationwide PLUS consumers that have items to deliver at a fare price."
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/padding3"
+                android:textColorHint="#ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:text="UDS is a System for people that want to:"
+                android:textColor="@android:color/white"
+                android:textColorHint="#ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:text="• Receive 80% of the fare.\n• Decide what fare to take at what price.\n• Be self employeed.\n• Write off expenses.\n• Keep the stores you talk to as your customers.\n• Get paid instantly.\n• No Credit Card Required.\n• No Credit Card Fees."
+                android:textColor="@android:color/white"
+                android:textColorHint="#ffffff"
+                android:textSize="@dimen/font_6" />
+        </LinearLayout>
+    </ScrollView>
+
+    <hawaiiappbuilders.c.view.OpenSansButton
+        android:id="@+id/btnEnrollNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/padding8"
+        android:layout_marginTop="@dimen/padding4"
+        android:layout_marginBottom="@dimen/padding1"
+        android:background="@drawable/selector_blackround"
+        android:minHeight="45dp"
+        android:text="Enroll Now"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

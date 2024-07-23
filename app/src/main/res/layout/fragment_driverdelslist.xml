@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hawaiiappbuilders.c.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/tabOpens"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_normaltab"
+                android:gravity="center"
+                android:padding="@dimen/padding2"
+                android:text="Open Dels"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/tabPendings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_normaltab"
+                android:gravity="center"
+                android:padding="@dimen/padding2"
+                android:text="My Dels"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/tabPast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_normaltab"
+                android:gravity="center"
+                android:padding="@dimen/padding2"
+                android:text="Past Dels"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lvOpenDelsData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_driver_deliver" />
+
+            <ListView
+                android:id="@+id/lvMyDelsData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_driver_deliver" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/white"
+        app:rippleColor="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_add_64dp"
+        tools:ignore="VectorDrawableCompat" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

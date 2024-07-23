@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding2"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding2"
+            android:paddingLeft="@dimen/padding4"
+            android:paddingRight="@dimen/padding4"
+            android:paddingTop="@dimen/padding5">
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/bg_edit"
+                android:hint="Title"
+                android:maxLength="50"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/padding1"
+                android:paddingTop="@dimen/padding1"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtMessage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/bg_feedback_panel"
+                android:hint="Your message here"
+                android:padding="@dimen/padding2"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:paddingBottom="@dimen/padding1"
+                android:paddingTop="@dimen/padding1"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding3"
+                android:layout_marginBottom="@dimen/padding4"
+                android:background="@drawable/selector_blueround"
+                android:minHeight="45dp"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_3" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

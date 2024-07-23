@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider" />
+
+    <LinearLayout
+        android:id="@+id/panelHeaders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+        <include layout="@layout/item_header_report_cell" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+</LinearLayout>
+
+

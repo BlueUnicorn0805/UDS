@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding1">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/padding1"
+            android:src="@drawable/uds_logo" />
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/user_name"
+            style="@style/TextWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Add a Video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_3" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Video ID/URL"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/videoId"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Video ID/URL"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/app_grey_light"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Video Headline"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/videoHeadline"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Video Headline"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/app_grey_light"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Video Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/videoTitle"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Video Title"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/app_grey_light"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="5dp"
+                android:text="Video Message"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_5" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/videoMessage"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:hint="Video Title"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:minHeight="150dp"
+                android:singleLine="true"
+                android:textColorHint="@color/app_grey_light"
+                android:textSize="@dimen/font_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding5"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.c.view.OpenSansButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/nav_header_vertical_spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_blackround"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_4" />
+
+                <hawaiiappbuilders.c.view.OpenSansButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/nav_header_vertical_spacing"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_blackround"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_4" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_img_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40.0dip"
+        android:src="@drawable/intro8" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/productsans_regular"
+        android:layout_marginHorizontal="24dp"
+        android:text="Credit Card Issues?"
+        android:textColor="@color/app_grey_dark"
+        android:textSize="@dimen/font_11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding3"
+        android:justificationMode="inter_word"
+        android:textSize="@dimen/font_intro_content"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:layout_marginHorizontal="24dp"
+        android:text="Tired of worrying about your credit card account numbers?\n
+Tired of bad credit scores?\n\n
+Never worry about credit again:\n
+* No credit card required\n
+* No checking account required\n
+* No credit card fees" />
+</LinearLayout>

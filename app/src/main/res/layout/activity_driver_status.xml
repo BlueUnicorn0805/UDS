@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Easy Communication"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_4" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/btnClientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_panel_white_thicker"
+        android:layout_marginHorizontal="@dimen/padding6"
+        android:layout_marginVertical="@dimen/padding1"
+        android:paddingVertical="@dimen/padding3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+            android:id="@+id/tvTripID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding2"
+            android:text="TripID: 1234"
+            android:textColor="@color/app_yellow"
+            android:textSize="@dimen/font_4" />
+
+        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+            android:id="@+id/tvClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client:\nChuck Lacona"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_4" />
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/tvClientAddr"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:layout_height="wrap_content"
+            android:text="Address PU"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/tvClientCSZ"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/padding3"
+            android:layout_height="wrap_content"
+            android:text="CSZ PU"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_7" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/btnNewDel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#00e91e63"
+                app:cardCornerRadius="15dp">-->
+
+            <LinearLayout
+                android:id="@+id/btnInRoute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_sendmsg"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_circle_stroke">
+                        <ImageView
+                            android:id="@+id/iv_in_route"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:paddingLeft="5dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/round_send_24"
+                            android:tint="@color/white"/>
+                </RelativeLayout>
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="SendMSG"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/btnViewDels"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding3"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#00673ab7"
+                app:cardCornerRadius="15dp">-->
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/btnDirection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_home_newdel" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="Directions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/btnMyBids"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#004caf50"
+                app:cardCornerRadius="15dp">-->
+
+            <LinearLayout
+                android:id="@+id/btnArrived"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_videocall"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bg_circle_stroke">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/round_videocam_24"
+                        android:tint="@color/white"/>
+                </RelativeLayout>
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="VideoCall"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+            </LinearLayout>
+
+            <!--</android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btnNewBid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding3"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#00ff5722"
+                app:cardCornerRadius="15dp">-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/btnCall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_home_call" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="Call"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <!--<android.support.v7.widget.CardView
+                android:id="@+id/btnMyBids"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#004caf50"
+                app:cardCornerRadius="15dp">-->
+
+            <LinearLayout
+                android:id="@+id/btnDroppedOff"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_dropped_off"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_selector_button" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:layout_marginHorizontal="@dimen/padding1"
+                    android:gravity="center"
+                    android:text="Dropped Off"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+            </LinearLayout>
+
+            <!--</android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btnNewBid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding3"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="#00ff5722"
+                app:cardCornerRadius="15dp">-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/btnEmergency"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_emergency"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_selector_button" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="Emergency"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_3" />
+
+
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/padding3"
+        android:layout_marginBottom="@dimen/padding3"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.c.view.OpenSansButton
+            android:id="@+id/btnComplete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/padding4"
+            android:background="@drawable/selector_greenround"
+            android:minHeight="45dp"
+            android:text="Complete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <hawaiiappbuilders.c.view.OpenSansButton
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/padding4"
+            android:background="@drawable/selector_blackround"
+            android:minHeight="45dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

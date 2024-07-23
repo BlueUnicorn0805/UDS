@@ -1,0 +1,199 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="dev_id">1434741</string>
+    <!--    <string name="app_name">UDS Delivery</string>-->
+    <string name="app_name">UDS Driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_register">User Register</string>
+
+    <string name="title_location_permission">This app uses your location to determine the best fares for you.\n\nWe ask to turn on location function one time so you don\'t have to stop while you are very busy to turn it on.</string>
+
+    <string name="title_signin">Sign In</string>
+    <string name="title_signup">Sign Up</string>
+    <string name="title_enrollnow">Enroll Now</string>
+
+    <string name="title_signup_hint">Not a member?</string>
+    <string name="title_register_now">Signup!</string>
+    <string name="title_firstname">First name</string>
+    <string name="title_lastname">Last name</string>
+    <string name="title_username">User name</string>
+    <string name="title_phone">Phone number</string>
+    <string name="title_gendar">Gender</string>
+    <string name="title_male">Male</string>
+    <string name="title_female">Female</string>
+    <string name="title_marital_status">Marital Status</string>
+    <string name="title_married">Married</string>
+    <string name="title_single">Single</string>
+    <string name="title_divorced">Divorced</string>
+    <string name="title_dob">DOB</string>
+    <string name="title_streetnum">Street Number</string>
+    <string name="title_streetname">Street Address</string>
+    <string name="title_ste">Apartment</string>
+    <string name="title_city">City</string>
+    <string name="title_state">State</string>
+    <string name="title_zip">Zip</string>
+
+    <string name="title_email">Email</string>
+    <string name="title_password">Password</string>
+    <string name="title_password_confirm">Confirm Password</string>
+
+    <string name="error_invalid_email">Email is invalid</string>
+    <string name="error_password_not_match">Password doesn\'t match</string>
+    <string name="error_password">Please input password</string>
+    <string name="error_invalid_password">Password must be at least 5 character long</string>
+    <string name="error_invalid_userame">Please input user name</string>
+    <string name="error_address">Invalid address</string>
+    <string name="error_server_response">Server response error</string>
+
+    <string name="appointments">Book an Appointment</string>
+
+    <string name="loading">Loading...</string>
+    <string name="saving">Saving...</string>
+    <string name="alert_close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="or">OR</string>
+    <string name="send">Send</string>
+    <string name="noname"></string>
+    <string name="finish_message">Press again to exit</string>
+    <string name="error_network">Network unavailable, please try again later</string>
+    <string name="error_invalid_credentials">Invalid Credentials.</string>
+
+    <string name="request_permission_hint">Please allow permissions to use function</string>
+
+    <string name="title_notification">Delivery Information</string>
+
+    <string-array name="array_favorite">
+        <item>Favorite 1</item>
+        <item>Favorite 2</item>
+        <item>Favorite 3</item>
+        <item>Favorite 4</item>
+        <item>Favorite 5</item>
+    </string-array>
+
+    <!-- General -->
+    <string name="txt_open_settings">Open Settings</string>
+    <string name="msg_location_permission_title">Location Permission Required.</string>
+    <string name="msg_empty_user">Could not find user details.</string>
+    <string name="msg_invalid_phone">Please enter a valid phone number.</string>
+    <string name="msg_something_went_wrong">Something went wrong!</string>
+    <string name="msg_invalid_code">Invalid verification code.</string>
+    <string name="msg_invalid_otp">OTP cannot be empty.</string>
+    <string name="app_about">This is a free Blood Donation Mobile Application which helps needful patients to search for blood donors in their city or area and request for blood donation.Connecting blood donors and needy reduces time which increases the possibility of saving lives and also eliminates the shortage of blood.</string>
+    <string name="you_are_here">You are here!</string>
+
+    <string name="msg_request_location_message">Your current location is required to share it. By this we can show everyone else where you are.</string>
+    <string name="msg_never_ask_sharing">Your current location is required for sharing. Please navigate to application settings -> Permissions and grant location permission.</string>
+
+    <string name="error_response_server">Operation failed. Please check your server.</string>
+    <string name="format_push_for_drivers">1 want your service. Please reply shortly.</string>
+    <string name="format_push_for_bidders">1 want your service. Please reply shortly.</string>
+
+    <string name="nav_header_title">UDS</string>
+    <string name="nav_header_version">1.1</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hack_datetime1">yyyy-MM-dd HH:mm:ss</string>
+    <string name="hack_datetime2">yyyy MM dd HH mm ss</string>
+    <string name="hack_date">yyyy-MM-dd-HH-mm-ss</string>
+
+    <!-- Sender -->
+    <string name="error_input_hint">Input address</string>
+    <string name="error_input_destination">Please input destination address</string>
+    <string name="error_wait_while_getting_your_address">Please wait a moment while getting your address.</string>
+    <string name="error_wait_while_getting_address">Please wait a moment while getting the address.</string>
+    <string name="error_make_delivery_first">To choose Fav driver, please make delivery first.</string>
+
+    <!-- Driver -->
+    <string name="error_approve_as_driver">To use function, please approve yourself as a driver.</string>
+
+    <!-- New Delivery -->
+    <string name="title_new_delivery">New Delivery</string>
+
+    <!-- Delivery Details -->
+    <string name="title_delivery_infor">Delivery Information</string>
+
+    <!-- Support -->
+    <string name="title_support">Support</string>
+    <string name="error_empty_user_fields">Please input user information</string>
+    <string name="error_empty_message">Message is invalid</string>
+
+    <string name="share_title">Share</string>
+    <string name="share_subject">You have been Invited to join MDF.</string>
+    <string name="share_body">Check out the MDF app. It really good!\n https://play.google.com/store/apps/details?id=com.sharelocationapp</string>
+
+    <!-- Profile -->
+    <string name="title_profile">Profile</string>
+
+    <!-- Earned -->
+    <string name="title_earned">Earned</string>
+
+    <string name="title_download_progress">Downloading file. Please wait...</string>
+    <string name="cancel_download">Cancel Donwloading</string>
+    <string name="error_download">Couldn\'t download file</string>
+
+    <string name="desc_about_zinta">Funds transfer is a service that transfers funds instantly, available in multiple apps and is provided by National Funding Group, LLC.</string>
+    <string name="desc_about_zinta1">Never go through the signup process again.\n1 Username\n1 Password\n1 PIN</string>
+    <string name="desc_about_zinta2">Use the same login with all these apps:\n1. Omnivers\n2. UDS Now\n3. National Funding Group, LLC</string>
+
+    <string-array name="spinner_timezone">
+        <item>EDT Eastern=-5.0</item>
+        <item>CTZ=-6.0</item>
+        <item>MTZ=-7.0</item>
+        <item>PTZ=-8.0</item>
+        <item>Alaska=-9.0</item>
+        <item>Arizona=-6.1</item>
+        <item>HZT=-10.0</item>
+        <item>IST=5.5</item>
+        <item>China CST=8.0</item>
+        <item>Japan JST=9.0</item>
+    </string-array>
+
+    <string-array name="spinner_message">
+        <item>MiscMsg=0</item>
+        <item>inRT=1</item>
+        <item>Arived=2</item>
+        <item>DO=3</item>
+        <item>EMG=4</item>
+        <item>cancelButt=10</item>
+        <item>completeButt=7</item>
+        <item>Emergency=75099</item>
+        <item>Completed=75090</item>
+        <item>TransferedOut=75088</item>
+        <item>DriverWaiting=75011</item>
+        <item>ReAssigned=75005</item>
+        <item>Assigned=75000</item>
+        <item>NotifiedDriverWillUpdate=75002</item>
+        <item>GetGas=75036</item>
+        <item>ToAppt=75034</item>
+        <item>GetClient=75032</item>
+        <item>ToBase=75030</item>
+        <item>AtAppt=75022</item>
+        <item>AtClient=75020</item>
+        <item>Canceled=75085</item>
+        <item>NeedsPickedUp=75006</item>
+    </string-array>
+
+    <string name="default_notification_channel_id">HawaiiAppsAll</string>
+
+    <string-array name="array_months">
+        <item>--All Dates--</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>

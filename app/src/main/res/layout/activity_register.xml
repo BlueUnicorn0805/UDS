@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="hawaiiappbuilders.c.RegisterActivity">
+
+    <hawaiiappbuilders.c.view.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/selector_backbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding5"
+        android:layout_marginLeft="@dimen/padding5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding5"
+        android:layout_marginRight="@dimen/padding5"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack"
+        app:layout_constraintVertical_bias="0.071">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:id="@+id/resizableImageView"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/uds_logo" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/title_signup"
+                android:textColor="@android:color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_1"
+                android:visibility="gone" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_firstname"
+                android:imeOptions="actionNext"
+                android:inputType="text|textPersonName"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_lastname"
+                android:imeOptions="actionNext"
+                android:inputType="text|textPersonName"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_phone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_zip"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/edtConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/title_password_confirm"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/padding1"
+                android:background="@drawable/bg_edittext_bg_round"
+                android:paddingHorizontal="@dimen/padding3"
+                android:paddingVertical="@dimen/padding2"
+                android:textColor="@color/white"
+                android:textColorHint="#80ffffff"
+                android:textSize="@dimen/font_6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:text="@string/title_gendar"
+                    android:textColor="@color/app_grey_dark"
+                    android:textSize="@dimen/font_8" />
+
+                <RadioGroup
+                    android:id="@+id/groupGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/title_male"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/title_female"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                </RadioGroup>
+
+                <hawaiiappbuilders.c.view.OpenSansTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:text="@string/title_marital_status"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/font_8" />
+
+                <RadioGroup
+                    android:id="@+id/groupMarital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioMarried"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/title_married"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioSingle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/title_single"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioDivorced"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/title_divorced"
+                        android:textColor="@color/app_grey_dark"
+                        android:textSize="@dimen/font_5" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="@string/title_dob"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|datetime"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtStreetNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_streetnum"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_streetname"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtSte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_ste"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_city"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding1"
+                    android:textColorHint="#80303030">
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/title_state"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/app_grey_dark"
+                        android:textColorHint="#80303030"
+                        android:textSize="@dimen/font_4" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_marginBottom="@dimen/padding7"
+                android:minHeight="45dp"
+                android:background="@drawable/selector_blackround"
+                android:text="@string/title_signup"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

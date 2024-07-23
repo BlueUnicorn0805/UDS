@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/panelMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="hawaiiappbuilders.c.MainActivity" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding2"
+            android:elevation="@dimen/padding1"
+            app:cardCornerRadius="10dp">
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/btnStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/user_status_on"
+                android:paddingLeft="@dimen/padding3"
+                android:paddingTop="@dimen/padding1"
+                android:paddingRight="@dimen/padding3"
+                android:paddingBottom="@dimen/padding1"
+                android:text="On Duty"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_5" />
+
+        </androidx.cardview.widget.CardView>
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/btnConfirmComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_blueround"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_5"
+            android:text="Confirm Complete"
+            android:paddingLeft="@dimen/padding5"
+            android:paddingRight="@dimen/padding5"
+            android:paddingTop="@dimen/padding2"
+            android:paddingBottom="@dimen/padding2"
+            android:layout_marginBottom="@dimen/padding3"
+            android:layout_gravity="center_horizontal|bottom" />
+    </FrameLayout>
+
+</LinearLayout>

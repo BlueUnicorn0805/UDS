@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="hawaiiappbuilders.c.LoginActivity">
+
+    <hawaiiappbuilders.c.view.ResizableImageView
+        android:id="@+id/btnBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/selector_backbtn"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding5"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/padding5"
+        android:layout_marginBottom="68dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57">
+
+
+        <LinearLayout
+            android:id="@+id/btnZintaPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/padding1"
+                android:src="@drawable/uds_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.139" />
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding1"
+                android:layout_marginTop="@dimen/padding2"
+                android:src="@drawable/ic_page_help"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/segmentedAuth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal"
+            segmentedgroup:sc_border_width="1dp"
+            segmentedgroup:sc_checked_text_color="@color/white"
+            segmentedgroup:sc_corner_radius="10dp"
+            segmentedgroup:sc_tint_color="@color/colorPrimary"
+            segmentedgroup:sc_unchecked_tint_color="@color/bg_tab_transparent">
+
+            <RadioButton
+                android:id="@+id/btnPassword"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password" />
+
+            <RadioButton
+                android:id="@+id/btnBioAuth"
+                style="@style/RadioButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Biometrics Auth" />
+
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/panelLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <hawaiiappbuilders.c.view.OpenSansEditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding4"
+                    android:background="@drawable/bg_edittext_bg_round_white"
+                    android:hint="@string/title_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textEmailAddress"
+                    android:maxLines="1"
+                    android:minHeight="45dp"
+                    android:paddingHorizontal="@dimen/padding3"
+                    android:paddingVertical="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textColorHint="#80303030"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.c.view.OpenSansEditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:background="@drawable/bg_edittext_bg_round_white"
+                    android:hint="@string/title_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:minHeight="45dp"
+                    android:paddingHorizontal="@dimen/padding3"
+                    android:paddingVertical="@dimen/padding2"
+                    android:textColor="@color/black"
+                    android:textColorHint="#80303030"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.c.view.OpenSansButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding2"
+                    android:background="@drawable/selector_blackround"
+                    android:minHeight="45dp"
+                    android:text="@string/title_signin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:id="@+id/btnForgotPwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/padding5"
+                    android:layout_marginRight="@dimen/padding1"
+                    android:background="@drawable/bg_textview_underline"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.c.view.OpenSansButton
+                    android:id="@+id/btnSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding3"
+                    android:background="@drawable/selector_blackround"
+                    android:minHeight="45dp"
+                    android:text="Get Started"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnFinger"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:src="@drawable/ic_fingerprint" />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

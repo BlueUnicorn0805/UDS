@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="hawaiiappbuilders.c">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- For devices running Android 12 (API level 32) or higher and integrating Agora Video SDK version v4.1.0 or lower, you also need to add the following permissions -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <!-- For Android 12.0 or higher, the following permissions are also required -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+
+    <application
+        android:name=".MyApplication"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_uds"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_uds_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+        <activity
+            android:name=".ActivityAddQRCode"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!--
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${mk}" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA6zZ1zcwK-jdVqK_niTUBJoBjnvtxOg6c" /> <!-- android:value="AIzaSyDiQaD_zmnAdvTH9Dv85TdwbKoLuU0fyqs" /> -->
+        <activity
+            android:name=".ActivityIntro"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ZAUHowItWorksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityReport"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWhiteNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityReportDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWhiteNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityLoginAuth"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ZAUQRCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ZAUEnterKeyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AboutZintaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityChangePassword"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityPermission"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterPhoneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterPhoneVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterEmailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".messaging.PushMessageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="Message"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="PushMessageActivity.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterEmailVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterEnrollNowActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterCustomerBaseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterFreeListingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SelectLanguageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SelectTimezoneActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterServiceActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ForgotPwdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="eAppBuilder1957.c.bid_accept_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DriverStatusActivity"
+            android:exported="true"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar" />
+        <activity
+            android:name=".ClientDetailsActivity"
+            android:exported="true"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar" />
+        <activity
+            android:name=".NewDeliveryActivity"
+            android:label="@string/title_new_delivery"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".DeliveryDetailsActivity"
+            android:label="@string/title_delivery_infor"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="true"
+            android:label="Notifications"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityDelsDetails"
+            android:label="Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityShowQR"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityEditProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityAddVideo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".TransparentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityBank"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".ActivityTransIntro"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SupportActivity"
+            android:label="@string/title_support"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".EarnedActivity"
+            android:label="@string/title_earned"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".TransactionHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar">
+            <intent-filter>
+                <action android:name="hawaiiappbuilders.c.dial_phone" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".videocalls.OutCallViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".videocalls.IncomingCallViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+            android:name=".videocalls.CallViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoActionbar"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!-- Google Firebase -->
+        <service
+            android:name=".messaging.AppFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" /> <!-- //////////////////////////////////////////////////// -->
+        <service
+            android:name=".location.GeocodeAddressIntentService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- ressource file to create -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

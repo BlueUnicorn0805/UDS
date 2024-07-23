@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+
+        <item android:title="NEMT">
+            <menu>
+                <item
+                    android:id="@+id/nav_nemt_schedule"
+                    android:icon="@drawable/ic_menu_event_note"
+                    android:title="Schedule" />
+            </menu>
+        </item>
+
+        <item android:title="Taxi">
+            <menu>
+                <item
+                    android:id="@+id/nav_taxi_schedule"
+                    android:icon="@drawable/ic_menu_event_note"
+                    android:title="Schedule" />
+            </menu>
+        </item>
+
+        <item android:title="Deliveries">
+            <menu>
+                <item
+                    android:id="@+id/nav_driverdeliveries"
+                    android:icon="@drawable/ic_menu_mydelivery"
+                    android:title="My Deliveries" />
+                <item
+                    android:id="@+id/nav_listofdrvdeliveries"
+                    android:icon="@drawable/ic_menu_listofdeliveries"
+                    android:title="List of Deliveries" />
+            </menu>
+        </item>
+        <item
+            android:title="Money"
+            android:visible="false">
+            <menu>
+                <item
+                    android:id="@+id/nav_makenewdelivery"
+                    android:icon="@drawable/ic_menu_sender"
+                    android:title="New Delivery" />
+                <item
+                    android:id="@+id/nav_existings"
+                    android:icon="@drawable/ic_menu_map"
+                    android:title="Existing Deliveries" />
+                <item
+                    android:id="@+id/nav_listofsenderdeliveries"
+                    android:icon="@drawable/ic_menu_listofdeliveries"
+                    android:title="List of Deliveries" />
+            </menu>
+        </item>
+
+    </group>
+
+    <item android:title="Money">
+        <menu>
+            <item
+                android:id="@+id/nav_qr"
+                android:icon="@drawable/ic_scan_qrcode"
+                android:title="Make QRCodes" />
+            <item
+                android:id="@+id/nav_deposit"
+                android:icon="@drawable/ic_menu_deposit"
+                android:title="Earned" />
+
+            <item
+                android:id="@+id/nav_transactions"
+                android:icon="@drawable/ic_menu_event_note"
+                android:title="Transactions" />
+
+            <item
+                android:id="@+id/nav_reports"
+                android:icon="@drawable/ic_menu_deposit"
+                android:title="Reports" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_profile"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_menu_video"
+                android:title="Add a Video" />
+
+            <item
+                android:id="@+id/nav_password"
+                android:icon="@drawable/ic_menu_password"
+                android:title="Change Password" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Support" />
+
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@drawable/ic_menu_notification"
+                android:title="Notifications" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

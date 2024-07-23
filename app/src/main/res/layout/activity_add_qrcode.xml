@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    tools:context=".ActivityAddQRCode">
+
+
+    <LinearLayout
+        android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <hawaiiappbuilders.c.view.ResizableImageView
+            android:id="@+id/tbar"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uds_logo" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Make QRCode(s)"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvQrcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginVertical="@dimen/activity_horizontal_margin"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/tvLable"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Free personalized Message in your QRCode"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/tvQRMessage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvQrcode" />
+
+            <hawaiiappbuilders.c.view.OpenSansEditText
+                android:id="@+id/tvQRMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                android:layout_marginVertical="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="Type your personalized Message here"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/app_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLable" />
+
+            <ImageView
+                android:id="@+id/iv_qr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/activity_horizontal_margin"
+                android:scaleType="center"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/btnMakeQr"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvQRMessage" />
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnMakeQr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding8"
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_marginBottom="@dimen/padding3"
+                android:background="@drawable/selector_blackround"
+                android:minHeight="45dp"
+                android:text="Make QRCode for clients"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintBottom_toTopOf="@+id/btnClose"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnClose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/padding8"
+                android:layout_marginTop="@dimen/padding4"
+                android:layout_marginBottom="@dimen/padding2"
+                android:background="@drawable/selector_blackround"
+                android:minHeight="45dp"
+                android:text="Close"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

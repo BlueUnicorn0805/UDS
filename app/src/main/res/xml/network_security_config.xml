@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- lets you customize your app's network security settings in a safe, declarative configuration file without modifying app code.-->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">Chuck.com</domain>
+        <domain includeSubdomains="true">gdata.youtube.com</domain>
+        <domain includeSubdomains="true">getfoodeasy.com</domain>
+        <domain includeSubdomains="true">getfood.azurewebsites.net</domain>
+        <domain includeSubdomains="true">img.youtube.com</domain>
+        <domain includeSubdomains="true">ilikeava.com</domain>
+    </domain-config>
+</network-security-config>

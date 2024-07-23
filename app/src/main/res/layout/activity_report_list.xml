@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.c.view.ResizableImageView
+            android:id="@+id/tbar"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uds_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recycler_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/padding1"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/app_yellow_title"
+            android:text="Choose a Report"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/grey_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/app_grey_light" />
+
+        <ExpandableListView
+            android:id="@+id/lvData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding1"
+            android:layout_weight="1"
+            android:childDivider="@null"
+            android:divider="@null"
+            android:dividerHeight="1px"
+            android:groupIndicator="@drawable/indicatorcustome"
+            android:childIndicator="@drawable/ic_navigate_next"
+            tools:listitem="@layout/item_industries_header"
+            android:scrollbars="none"></ExpandableListView>
+
+    </LinearLayout>
+
+</LinearLayout>

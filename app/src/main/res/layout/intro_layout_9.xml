@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro9" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="Get Started Now!"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="Start building your book of people and companies that love your service. This will mean more deliveries for you now but also when you retire your “Book” will be an asset you can sell to a newcomer. "
+            android:textSize="@dimen/font_intro_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="Get your FREE listing!"
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="Its 100% Free and no card required.\n
+Included with your listing is:\n
+1. Your listing\n
+2. Free video will play 24/7/365\n
+3. You can update the message anytime you want\n
+4. You control your available hours\n
+5. Update your area covered 24/7"
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="Get started today!\n\n"
+            android:textSize="@dimen/font_intro_content" />
+
+    </LinearLayout>
+</ScrollView>

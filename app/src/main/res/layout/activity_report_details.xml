@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <!--    <androidx.core.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/toolbar">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding1"
+                android:src="@drawable/uds_logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pdfView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutTop"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/companyDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding1">
+
+                        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                            android:id="@+id/storeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Company"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_7" />
+
+                        <hawaiiappbuilders.c.view.OpenSansTextView
+                            android:id="@+id/storeInfo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Info1"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_9" />
+
+                        <hawaiiappbuilders.c.view.OpenSansTextView
+                            android:id="@+id/storeInfo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Info2"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_9" />
+
+                        <hawaiiappbuilders.c.view.OpenSansTextView
+                            android:id="@+id/storeInfo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="Info3"
+                            android:textColor="@color/app_grey_dark"
+                            android:textSize="@dimen/font_9"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding1">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/padding1"
+                            android:layout_marginRight="30dp">
+
+                            <hawaiiappbuilders.c.view.OpenSansTextView
+                                android:id="@+id/tvInvoice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="INVOICE"
+                                android:textColor="@color/app_grey_dark"
+                                android:textSize="@dimen/font_5"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <hawaiiappbuilders.c.view.OpenSansTextView
+                                android:id="@+id/orderDate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding1"
+                                android:gravity="center"
+                                android:text="Tue 11-20-2019"
+                                android:textColor="@color/app_grey_dark"
+                                android:textSize="@dimen/font_7"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvInvoice" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/header"
+                    layout="@layout/item_header_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvMenuList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                tools:listitem="@layout/item_data_report" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:visibility="gone">
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/selector_blackround"
+                android:elevation="@dimen/padding1"
+                android:minHeight="45dp"
+                android:paddingHorizontal="@dimen/padding3"
+                android:text="Save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <hawaiiappbuilders.c.view.OpenSansButton
+                android:id="@+id/btnEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/selector_blackround"
+                android:elevation="@dimen/padding1"
+                android:minHeight="45dp"
+                android:paddingHorizontal="@dimen/padding3"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnSave" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</RelativeLayout>

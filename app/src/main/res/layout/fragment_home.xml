@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/btnNewDel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#00e91e63"
+            app:cardCornerRadius="15dp">-->
+
+        <LinearLayout
+            android:id="@+id/btnNewDel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_home_newdel" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding3"
+                android:gravity="center"
+                android:text="Delivery\nDetails"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_3" />
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/btnViewDels"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#00673ab7"
+            app:cardCornerRadius="15dp">-->
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/btnZinta"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding3"
+                android:gravity="center"
+                android:text="Instant Funds Transfer\nBuilt In"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_3" />
+
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
+        <!--<android.support.v7.widget.CardView
+            android:id="@+id/btnMyBids"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#004caf50"
+            app:cardCornerRadius="15dp">-->
+
+        <LinearLayout
+            android:id="@+id/btnShowQRAsID"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_scan_qrcode" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding3"
+                android:layout_marginHorizontal="@dimen/padding1"
+                android:gravity="center"
+                android:lines="2"
+                android:text="Show Driver ID Badge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_3" />
+
+        </LinearLayout>
+
+        <!--</android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnNewBid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/padding3"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardBackgroundColor="#00ff5722"
+            app:cardCornerRadius="15dp">-->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/btnMyProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_home_profile" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding3"
+                android:gravity="center"
+                android:text="Profile"
+                android:lines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_3" />
+
+
+        </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+</LinearLayout>

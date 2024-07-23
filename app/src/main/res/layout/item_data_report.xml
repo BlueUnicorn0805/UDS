@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_divider" />
+
+    <LinearLayout
+        android:id="@+id/panelData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+        <include layout="@layout/item_data_report_cell" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/app_grey_dark" />
+</LinearLayout>
+
+

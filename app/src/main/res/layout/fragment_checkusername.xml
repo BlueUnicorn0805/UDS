@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding1">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/padding1"
+
+            android:src="@drawable/uds_logo" />
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/user_name"
+            style="@style/TextWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Your Personal @Handle"
+            android:textSize="@dimen/font_3" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/semiwhite" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/openSansBoldTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Create a public facing @Handle that people can send you invites and even funds."
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <hawaiiappbuilders.c.view.OpenSansEditText
+            android:id="@+id/edtUsername"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding2"
+            android:gravity="center"
+            android:hint="Enter your @Handle"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLines="1"
+            android:paddingVertical="@dimen/padding2"
+            android:singleLine="true"
+            android:textColorHint="#80ffffff"
+            android:textSize="@dimen/font_5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openSansBoldTextView2"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <hawaiiappbuilders.c.view.OpenSansBoldTextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Good choice! Click Next"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_5"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCheckName"
+            tools:visibility="visible" />
+
+        <hawaiiappbuilders.c.view.OpenSansButton
+            android:id="@+id/btnCheckName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding5"
+            android:layout_marginBottom="@dimen/padding1"
+            android:background="@drawable/buttonmain_round_white"
+            android:minHeight="45dp"
+            android:paddingHorizontal="@dimen/padding5"
+            android:text="Check Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
+
+        <hawaiiappbuilders.c.view.OpenSansButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/buttonmain_round"
+            android:drawableRight="@drawable/ic_navigate_next_24dp"
+            android:drawableTint="@color/white"
+            android:elevation="@dimen/padding1"
+            android:minHeight="45dp"
+            android:paddingHorizontal="@dimen/padding3"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

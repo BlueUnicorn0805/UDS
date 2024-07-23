@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#0ea9eb</color>
+    <color name="colorPrimaryDark">#0ea9eb</color>-->
+
+    <!--<color name="colorPrimary">#5b99ec</color>
+    <color name="colorPrimaryDark">#5b99ec</color>-->
+
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#424242</color>
+    <color name="app_grey_medium">#808080</color>
+    <color name="colorAccent">#044d97</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="app_yellow_title">#ffb000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="semiwhite">#80ffffff</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="black">#000000</color>
+
+    <color name="app_blue">#107AE7</color>
+    <color name="app_red">#f41105</color>
+    <color name="app_grey">#676767</color>
+    <color name="app_grey_dark">#3d3d3d</color>
+    <color name="app_grey_light">#d8d8d8</color>
+    <color name="app_yellow">#f9901a</color>
+
+    <color name="app_divider">#80BFBFBF</color>
+    <color name="green">#00FF00</color>
+
+    <color name="user_status_on">#77bf8f</color>
+    <color name="user_status_clicked">#5077bf8f</color>
+    <color name="user_status_off">#FF4500</color>
+
+    <color name="decor_color">#eb353d</color>
+
+    <color name="tab_color_active">#a0ffffff</color>
+    <color name="tab_color_normal">#50ffffff</color>
+
+    <color name="tab_color_bottom_active">#424242</color>
+    <color name="tab_color_bottom_normal">#808080</color>
+
+    <!-- Rating Bar -->
+    <color name="ratingNormal">#a0a0a0</color>
+    <color name="ratingActive">#f9901a</color>
+
+    <color name="colorTabBack">#ff505050</color>
+    <color name="colorTabActive">#ff303030</color>
+    <color name="bg_tab_transparent">#a0ffffff</color>
+    <color name="app_teal_light">#00bbd4</color>
+
+    <color name="colorMain">#000000</color>
+
+    <color name="red">#F44336</color>
+</resources>

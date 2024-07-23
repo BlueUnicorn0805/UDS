@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_11"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:textColor="@color/app_grey_dark"
+            android:text="Find employees with a tap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="Yeah really, it's that easy.
+As an employer, you now can increase your fleet and hire others to help you deliver more. Hire full-time or by the job/day. Plus be assured of getting the job done to your liking because the app uses pre-paid milestones, securely and instantly. What that means is you create a milestone and pay for it, but it is not released until you verify the work has been completed correctly. "
+            android:textSize="@dimen/font_intro_content" />
+    </LinearLayout>
+
+</LinearLayout>

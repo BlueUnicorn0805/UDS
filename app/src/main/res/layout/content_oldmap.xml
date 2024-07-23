@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/panelMap"
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="hawaiiappbuilders.c.MainActivity" />
+
+        <ImageView
+            android:id="@+id/btnScreen"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="right|top"
+            android:layout_margin="@dimen/padding2"
+            android:padding="@dimen/padding1"
+            android:src="@drawable/selector_map_type_btn" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/padding1"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="@dimen/padding2"
+            android:layout_gravity="center_horizontal">
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/btnStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding3"
+                android:paddingTop="@dimen/padding1"
+                android:paddingBottom="@dimen/padding1"
+                android:textSize="@dimen/font_5"
+                android:textColor="@color/colorWhite"
+                android:background="@color/user_status_on"
+                android:text="On Duty"
+                android:paddingRight="@dimen/padding3" />
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/panelScrollContents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/panelBottomUser2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/padding1"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="From:"
+                        android:textSize="14sp" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtFromAddr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableTint="@color/colorAccent"
+                        android:foregroundTint="@color/colorAccent"
+                        android:hint="Holiday Inn"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="#80303030"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="To Address"
+                        android:textSize="14sp" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtToAddr"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableTint="@color/colorAccent"
+                        android:foregroundTint="@color/colorAccent"
+                        android:hint="123 Main St, Des Moines, IA 50309"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="#80303030"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/panelDistance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <hawaiiappbuilders.c.view.OpenSansTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:text="Distance:"
+                        android:textSize="14sp" />
+
+                    <hawaiiappbuilders.c.view.OpenSansEditText
+                        android:id="@+id/edtDistance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:backgroundTint="@color/colorAccent"
+                        android:drawableTint="@color/colorAccent"
+                        android:editable="false"
+                        android:foregroundTint="@color/colorAccent"
+                        android:hint=""
+                        android:imeOptions="actionNext"
+                        android:inputType="textPostalAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="#80303030"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/panelUser1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <hawaiiappbuilders.c.view.OpenSansTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Deliver to Address"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <hawaiiappbuilders.c.view.OpenSansEditText
+                            android:id="@+id/edtDeliverAddr"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorAccent"
+                            android:drawableTint="@color/colorAccent"
+                            android:foregroundTint="@color/colorAccent"
+                            android:hint="Input Address"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPostalAddress"
+                            android:maxLines="1"
+                            android:textColor="@color/colorAccent"
+                            android:textColorHint="#80303030"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+                        <hawaiiappbuilders.c.view.OpenSansTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choose Favorite"
+                            android:textSize="12sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerFavs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorAccent"
+                            android:drawableTint="@color/colorAccent"
+                            android:entries="@array/array_favorite"
+                            android:foregroundTint="@color/colorAccent"
+                            android:minHeight="45dp"
+                            android:paddingTop="5dp"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/colorAccent" />
+
+                        <hawaiiappbuilders.c.view.OpenSansButton
+                            android:id="@+id/btnSendRequest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_blueround"
+                            android:text="SEND REQUEST"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/panelUser2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <hawaiiappbuilders.c.view.OpenSansTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Enter Bid Amount"
+                                android:textSize="11sp" />
+
+                            <hawaiiappbuilders.c.view.OpenSansTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Enter ETA minutes"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <hawaiiappbuilders.c.view.OpenSansEditText
+                                android:id="@+id/edtBidAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:drawableTint="@color/colorAccent"
+                                android:foregroundTint="@color/colorAccent"
+                                android:hint="Bid Amount"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                android:textColor="@color/colorAccent"
+                                android:textColorHint="#80303030"
+                                android:textSize="15sp" />
+
+                            <hawaiiappbuilders.c.view.OpenSansEditText
+                                android:id="@+id/edtETAMins"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/colorAccent"
+                                android:drawableTint="@color/colorAccent"
+                                android:foregroundTint="@color/colorAccent"
+                                android:hint="ETA minutes"
+                                android:imeOptions="actionDone"
+                                android:inputType="numberDecimal"
+                                android:maxLines="1"
+                                android:textColor="@color/colorAccent"
+                                android:textColorHint="#80303030"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+
+                        <hawaiiappbuilders.c.view.OpenSansButton
+                            android:id="@+id/btnSendBid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_blueround"
+                            android:text="SEND BID"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/font_5" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioUser1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent"
+                        android:checked="true"
+                        android:text="Sender" />
+
+                    <hawaiiappbuilders.c.view.OpenSansRadioButton
+                        android:id="@+id/radioUser2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:buttonTint="@color/colorAccent"
+                        android:text="Driver" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvUserCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding3"
+                android:text="Bids"
+                android:textColor="@color/app_grey_dark"
+                android:textSize="@dimen/font_4">
+
+            </hawaiiappbuilders.c.view.OpenSansTextView>
+
+            <include layout="@layout/item_bids_header" />
+
+            <hawaiiappbuilders.c.view.ExpandableHeightListView
+                android:id="@+id/lvDataList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

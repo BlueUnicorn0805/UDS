@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--android:background="@drawable/scrim"-->
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/toolbar_layout" />
+
+        </FrameLayout>
+
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_weight="1">
+
+        <VideoView
+            android:id="@+id/VideoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding1"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding5"
+            android:src="@drawable/ic_auth_icon"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <hawaiiappbuilders.c.view.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:textSize="@dimen/font_6"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:layout_marginHorizontal="24dp"
+        android:text="No credit card needed
+\nNo bank account needed
+\nNever impacts your credit score
+\nEveryone qualifies for HaloPay
+\nThe only secure payment system for children and families" />
+
+    <hawaiiappbuilders.c.view.OpenSansButton
+        android:id="@+id/btnGoTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding1"
+        android:background="@drawable/selector_blackround"
+        android:gravity="center"
+        android:maxLines="2"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_6" />
+</LinearLayout>

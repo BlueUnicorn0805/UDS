@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="Individual QR Code"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:layout_marginBottom="@dimen/padding2"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="New form of advertising and its 100% free!\nOpens new and exciting ways to do so many things.
+Share it where and when you want.\n
+People can:\n
+1. See your listing without seeing any others\n
+2. Add you as their favorite driver\n
+3. Its good P.R. \n
+What would you do with yours?\n
+• Wear it\n
+• Place on side of your vehicle(s)\n
+• Website\n
+• Social media\n
+• Cards\n
+• Emails\n
+• Billboards\n
+• Signs"
+            android:textSize="@dimen/font_intro_content" />
+    </LinearLayout>
+
+</ScrollView>

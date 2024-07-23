@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Use DrawerLayout as root container for activity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/panelCal"
+    android:paddingTop="@dimen/padding4"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/panelCalTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding1">
+
+        <ImageView
+            android:id="@+id/btnCalNav"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_arrow_left"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_action_dropdown"
+            android:drawableTint="@color/white"
+            android:gravity="center_vertical"
+            android:padding="@dimen/padding1"
+            android:text="August"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical">
+
+            <ImageView
+                android:id="@+id/btnCalSearch"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right|center_vertical"
+                android:padding="@dimen/padding1"
+                android:src="@drawable/ic_nav_search"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btnCalToday"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="right|center_vertical"
+                android:padding="@dimen/padding1"
+                android:src="@drawable/ic_nav_today"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/panelWeekDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panelCalTop"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnPrevDay"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/padding1"
+            android:src="@drawable/ic_arrow_left" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/weekLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/symbolOfWeek"
+                    layout="@layout/date_strip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <include
+                    android:id="@+id/dateOfWeek"
+                    layout="@layout/date_strip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnNextDay"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/padding1"
+            android:src="@drawable/ic_arrow_right" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAppts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/panelWeekDays"
+        android:background="@color/white"
+        tools:listitem="@layout/layout_appt_timeline_item" />
+
+    <CalendarView
+        android:id="@+id/calView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/panelCalTop"
+        android:background="@color/white"
+        android:visibility="visible" />
+
+</RelativeLayout>

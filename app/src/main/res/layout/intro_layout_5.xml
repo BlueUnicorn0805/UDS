@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/intro_img_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/intro5" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_11"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/productsans_regular"
+        android:textColor="@color/app_grey_dark"
+        android:text="Delegate Tasks to Employees" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding3"
+        android:justificationMode="inter_word"
+        android:textSize="@dimen/font_intro_content"
+        android:lineSpacingExtra="@dimen/padding1"
+        android:layout_marginHorizontal="24dp"
+        android:text="Now you can create tasks and delegate them to the proper employee.
+The employee can see it instantly.
+You can keep track of tasks that still are not completed. " />
+</LinearLayout>

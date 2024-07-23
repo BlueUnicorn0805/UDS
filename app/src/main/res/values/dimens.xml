@@ -1,0 +1,55 @@
+<resources>
+
+    <dimen name="nav_bar_height">50.0dip</dimen>
+    <dimen name="title_font">20.0sp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding1">5dp</dimen>
+    <dimen name="padding2">10dp</dimen>
+    <dimen name="padding3">15dp</dimen>
+    <dimen name="padding4">20dp</dimen>
+    <dimen name="padding5">25dp</dimen>
+    <dimen name="padding6">30dp</dimen>
+    <dimen name="padding7">35dp</dimen>
+    <dimen name="padding8">40dp</dimen>
+    <dimen name="padding9">45dp</dimen>
+    <dimen name="padding10">50dp</dimen>
+    <dimen name="padding11">70dp</dimen>
+    <dimen name="padding12">100dp</dimen>
+
+    <dimen name="font_1">20.0sp</dimen>
+    <dimen name="font_2">19.0sp</dimen>
+    <dimen name="font_3">18.0sp</dimen>
+    <dimen name="font_4">17.0sp</dimen>
+    <dimen name="font_5">16.0sp</dimen>
+    <dimen name="font_6">15.0sp</dimen>
+    <dimen name="font_7">14.0sp</dimen>
+    <dimen name="font_8">12.0sp</dimen>
+    <dimen name="font_9">10.0sp</dimen>
+    <dimen name="font_10">20.0sp</dimen>
+    <dimen name="font_11">25.0sp</dimen>
+    <dimen name="font_12">30.0sp</dimen>
+
+    <dimen name="font_contents">18.0sp</dimen>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="pv_pin_view_item_size">48dp</dimen>
+    <dimen name="pv_pin_view_item_radius">5dp</dimen>
+    <dimen name="pv_pin_view_item_spacing">5dp</dimen>
+    <dimen name="pv_pin_view_item_line_width">2dp</dimen>
+    <dimen name="pv_pin_view_cursor_width">2dp</dimen>
+
+    <dimen name="intro_img_height">320.0dip</dimen>
+    <dimen name="font_intro_content">16.0sp</dimen>
+
+    <dimen name="button_appt_width">45dp</dimen>
+    <dimen name="button_appt_height">45dp</dimen>
+    <dimen name="button_appt_title">9sp</dimen>
+
+</resources>

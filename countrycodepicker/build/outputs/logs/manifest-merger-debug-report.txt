@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml:1:1-61
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml:1:1-61
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml:1:1-61
+	package
+		ADDED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml:1:11-59
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml:1:1-61
+uses-sdk
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+		ADDED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+		ADDED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml
+		INJECTED from E:\UDS-Android\countrycodepicker\src\main\AndroidManifest.xml

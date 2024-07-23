@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/intro1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:text="Privacy:"
+            android:textColor="@color/app_grey_dark"
+            android:textSize="@dimen/font_11" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding3"
+            android:justificationMode="inter_word"
+            android:text="Integrity is the Key:"
+            android:textSize="@dimen/font_intro_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:text="These days people are very aware of how privacy is starting to affect them. We have learned saying and doing is 2 different things."
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="How to know when to trust: "
+            android:textSize="@dimen/font_intro_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="If a business model is to make money off your data, you know not to trust them. "
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="How you know you can trust us: "
+            android:textSize="@dimen/font_intro_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="Our business model does not include making money off your data."
+            android:textSize="@dimen/font_intro_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="Our promise to you: "
+            android:textSize="@dimen/font_intro_content"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/padding1"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:justificationMode="inter_word"
+            android:text="In our apps, most of your data stays on your phone and will never be found on the Internet."
+            android:textSize="@dimen/font_intro_content" />
+    </LinearLayout>
+</ScrollView>

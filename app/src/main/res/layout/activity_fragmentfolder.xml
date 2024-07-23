@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"></FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/semiwhite" />
+
+        <LinearLayout
+            android:id="@+id/panelNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffe34884"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tabBack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:drawableLeft="@drawable/tab_backword"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+            </LinearLayout>
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:id="@+id/btnHelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:background="@drawable/selector_bottomtab"
+                android:gravity="center"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:padding="@dimen/padding2"
+                android:text="Help"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <LinearLayout
+                android:id="@+id/tabNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_6" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:id="@+id/tabDeliveries"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/tab_forward"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

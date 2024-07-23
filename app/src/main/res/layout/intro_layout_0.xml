@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/intro_img_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40.0dip"
+            android:adjustViewBounds="true"
+            android:src="@drawable/uds_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_11"
+            android:layout_marginHorizontal="24dp"
+            android:fontFamily="@font/productsans_regular"
+            android:textColor="@color/app_grey_dark"
+            android:text="Welcome" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding3"
+            android:lineSpacingExtra="@dimen/padding1"
+            android:layout_marginHorizontal="24dp"
+            android:justificationMode="inter_word"
+            android:textSize="@dimen/font_intro_content"
+            android:text="Here is the opportunity to do the same work but get paid more and maybe even enjoy working a little bit. \n• 80% of the entire delivery fee is a lot better than the standard 25%. \n• Plus, you get 100% of the tip. \n• Write off your expenses like: gas, repairs, new purchases, and any business expense. \n• Become your own boss because every driver is self-employed independent owner. \n• All this means you bring home more." />
+
+    </LinearLayout>
+
+</ScrollView>

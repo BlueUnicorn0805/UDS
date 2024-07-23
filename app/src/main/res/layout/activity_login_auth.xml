@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/app_grey_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding7">
+
+            <hawaiiappbuilders.c.view.ResizableImageView
+                android:id="@+id/btnBack"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/uds_logo" />
+
+            <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                tools:text="HaloPay Authenticator™"
+                android:textColor="@color/app_blue"
+                android:visibility="gone"
+                android:textSize="@dimen/font_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <hawaiiappbuilders.c.view.OpenSansTextView
+                android:id="@+id/tvRemainingSecs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:text="Simply Tap Match within 15 seconds"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/option1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/selector_dashboard_btn"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1211"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:gravity="center"
+                        android:text="121"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="@dimen/padding3"
+                    android:background="@drawable/selector_dashboard_btn"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1214"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:gravity="center"
+                        android:text="124"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/option3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/selector_dashboard_btn"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1234"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:gravity="center"
+                        android:text="1234"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="@dimen/padding3"
+                    android:background="@drawable/selector_dashboard_btn"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1521"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+
+                    <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                        android:id="@+id/tvCode42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding1"
+                        android:gravity="center"
+                        android:text="152"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_5" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option5"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding3"
+                android:background="@drawable/shape_auth_rect"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:id="@+id/tvCode51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+
+                <hawaiiappbuilders.c.view.OpenSansBoldTextView
+                    android:id="@+id/tvCode52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding3"
+                    android:gravity="center"
+                    android:text="1234"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/panelMenuBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A0505050"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/panelMenus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/fbAddReminder"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:id="@+id/btnScanQRCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan a QR code"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:src="@drawable/quantum_gm_ic_local_see_googblue_24"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/white"
+                    app:elevation="0dp"
+                    app:fabCustomSize="40dp"
+                    app:fabSize="mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnEnterSetupKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter a setup key"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_7" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/btnAddA1C"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:elevation="1dp"
+                    android:src="@drawable/quantum_gm_ic_keyboard_googblue_24"
+                    android:visibility="visible"
+                    app:backgroundTint="@color/white"
+                    app:elevation="0dp"
+                    app:fabCustomSize="40dp"
+                    app:fabSize="mini" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fbAddReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:fabSize="mini"
+            android:clickable="true"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+

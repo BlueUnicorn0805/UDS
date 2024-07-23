@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding1"
+    android:paddingLeft="@dimen/padding3"
+    android:paddingRight="@dimen/padding3"
+    android:paddingStart="@dimen/padding3"
+    android:paddingEnd="@dimen/padding3"
+    android:gravity="center_vertical"
+    android:paddingBottom="@dimen/padding1"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/txtNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/font_5"
+            android:textColor="@color/app_grey_dark"
+            android:text="#"/>
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/font_7"
+            android:textColor="@color/app_grey_dark"
+            android:text="Name"/>
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/txtAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textSize="@dimen/font_7"
+            android:ellipsize="end"
+            android:text="Address"
+            android:textColor="@color/app_grey_dark"/>
+
+        <hawaiiappbuilders.c.view.OpenSansTextView
+            android:id="@+id/txtPickupTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="@dimen/font_7"
+            android:text="Pickup Time"
+            android:gravity="center"
+            android:textColor="@color/app_grey_dark"/>
+    </LinearLayout>
+
+</LinearLayout>
